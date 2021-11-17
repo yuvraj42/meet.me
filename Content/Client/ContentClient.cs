@@ -49,7 +49,7 @@ namespace Content
             _messageHandlers[MessageEvent.Download] = new Action<MessageData>(DownloadMessageHandler);
 
             // subscribe to the network
-            _notifHandler = new ContentClientNotificationHandler();
+            _notifHandler = new ContentClientNotificationHandler(this);
             _communicator = CommunicationFactory.GetCommunicator();
             _communicator.Subscribe("Content", _notifHandler);
 

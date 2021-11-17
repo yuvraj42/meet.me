@@ -11,10 +11,10 @@ namespace Content
         private ISerializer _serializer;
         private ContentClient _contentHandler;
         
-        public ContentClientNotificationHandler()
+        public ContentClientNotificationHandler(IContentClient contentHandler)
         {
             _serializer = new Serializer();
-            _contentHandler = ContentClientFactory.getInstance() as ContentClient;
+            _contentHandler = contentHandler as ContentClient;
         }
 
         /// <inheritdoc/>
