@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
 
@@ -45,4 +45,8 @@
     <ItemGroup>
         <Folder Include="E2E"/>
     </ItemGroup>
+
+	<PropertyGroup>
+		<UseDataCollector/>
+	</PropertyGroup>
 </Project>
